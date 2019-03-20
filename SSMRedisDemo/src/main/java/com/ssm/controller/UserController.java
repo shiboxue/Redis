@@ -41,7 +41,8 @@ public class UserController {
      * @throws Exception 
      */
     
-    @RequestMapping("/indexMSG")
+    @SuppressWarnings("unchecked")
+	@RequestMapping("/indexMSG")
     public String getIndexMSG(Model model) throws Exception{
     	String usersCount = null;
     	
