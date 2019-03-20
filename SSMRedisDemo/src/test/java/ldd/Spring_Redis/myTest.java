@@ -40,8 +40,7 @@ public class myTest {
 	@Test
 	public void Test02(){					
 		redisTemplate.opsForValue().set("shiboxue", "123");
-		String role1 = redisTemplate.opsForValue().get("shiboxue").toString();
-				
+		String role1 = redisTemplate.opsForValue().get("shiboxue").toString();				
 		System.out.println(role1.toString());
 	}
 	
