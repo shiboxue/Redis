@@ -31,7 +31,7 @@ public class UserController {
     private IUserService userService;
     
     @Resource
-    private RedisTemplate redisTemplate;
+    private RedisTemplate<String, String> redisTemplate;
     
 
     /**
@@ -40,8 +40,7 @@ public class UserController {
      * @return String
      * @throws Exception 
      */
-    
-    @SuppressWarnings("unchecked")
+       
 	@RequestMapping("/indexMSG")
     public String getIndexMSG(Model model) throws Exception{
     	String usersCount = null;
