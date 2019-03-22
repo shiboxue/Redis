@@ -48,8 +48,7 @@ public class HttpTest {
                     HttpEntity entity = response.getEntity();
                     if (entity != null) {
                         // 获取返回结果
-                        result = EntityUtils.toString(entity);
-                        System.out.println(result);
+                        result = EntityUtils.toString(entity);                       
                     }
                 } finally {
                     // 关闭到客户端的连接
